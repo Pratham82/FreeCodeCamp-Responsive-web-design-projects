@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;    
+    background-image: linear-gradient(45deg,rgb(0, 183, 255),rgb(16, 147, 235));
+    color: white;
+    
+
+}
+
+.container #description{
+    font-size: 17.5px;
+}
+
+.container{
+
+    margin: 15px auto;
+    max-width: 560px;
+    padding: 40px;
+}
+
+h1,p{
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#survey-form  label{
+    display: block;
+}
+
+form{
+    background-color: rgba(8, 102, 243, 0.514);
+    color: white;
+    padding: 10px 20px;
+}
+
+
+#survey-form #name,#email,#number{
+    width: 100%;
+    padding: 2px;
+    height: 25px;
+    border-radius: 0.5em;
+}
+
+#survey-form #name-label,#email-label,#number-label{
+    padding: 15px 0px 5px 0px;
+}
+
+.form-options{
+   margin: 25px 0px ;
+}
+.form-options .form-radio{
+    margin-right: 10px;
+}
+.form-options label{
+    margin:5px 0px;
+}
+
+.form-check{
+    margin: 25px 0px ;
+}
+.form-check select{
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;   
+    width: 100%;
+    height: 30px;
+    border-radius: 0.5em;
+}
+
+.form-checkbox{
+    margin: 25px 0px ;
+}
+
+.form-checkbox .checks{
+    margin-right:10px;
+}
+
+.suggestions textarea{
+    width: 100%;
+    height: 75px;
+    border-radius: 5px;
+}
+
+#submit{
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;   
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: blue ;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(7, 52, 255);
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+#submit:hover{
+    background-color: rgba(11, 67, 250, 0.808);
+
+}
+

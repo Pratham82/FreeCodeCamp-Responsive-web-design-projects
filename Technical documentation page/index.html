@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c94e37b448.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+    <title>Technical documentation</title>
+    <link rel="stylesheet" href="style.css">
+	    <link rel="icon" href="https://i.postimg.cc/SQfYXm7w/website.png">
+</head>
+<body>
+    <nav id ="navbar">
+        <header id ="header"><h2>Learn Python</h2></header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction_📢">Introduction 📢</a></li>
+            <li><a class="nav-link" href="#Hello_world_👋">Hello world 👋</a></li>
+            <li><a class="nav-link" href="#Variables_📦">Variables 📦</a></li>
+            <li ><a class="nav-link" href="#Data_types_💾">Data types 💾</a></li>
+            <li ><a class="nav-link" href="#If_else_👍_/_👎">If else 👍 / 👎</a></li>
+            <li ><a class="nav-link" href="#Functions_🏂">Functions 🏂</a></li>
+            <li ><a class="nav-link" href="#References_🔗">References 🔗</a></li>
+            
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <button style="font-size:30px;cursor:pointer" class ="openbtn"onclick="openNav()">Open✔️</button>
+        <button style="font-size:30px;cursor:pointer"class="closebtn"onclick="closeNav()">Close ❌</button>
+        <br>
+        <section class="main-section" id="Introduction_📢">
+            <header>
+           <b>Introduction 📢</b> 
+            </header>
+           <p>Python is an easy to learn, powerful programming language. <br>
+            It has efficient high-level data structures and a simple but effective approach to object-oriented programming. <br>
+            Python’s elegant syntax and dynamic typing, together with its interpreted nature,make it an ideal language <br>
+            for scripting and rapid application development in many areas on most platforms.</p>
+        </section>
+        <section class="main-section" id="Hello_world_👋">
+            <header> 
+               <b>Hello world 👋</b> 
+            </header>
+            <p>In this program we are using python3 . You can get it <a href="https://www.python.org/downloads/">here. </a>
+                 After installation you directly get stared with python IDLE. <br>
+                Or else you can use your favourite text editor and add python extension.
+                In python IDLE you can get the output,<br>
+                directly as you have written the code and pressed entered.
+                <br><br>
+                In this program we are just printing out hello world string. If you are familiar with another programming language,
+                <br> then you can notice there is no main method here. Actually we don't have to explicity call in the main method here.
+                <br>Python compiler will do this for us, That is one of the best part of python it is very easy get familiar with syntax.
+
+            </p>  
+            <p>First program: </p>
+            <img src="https://i.postimg.cc/1z26rsCs/Hello-world.png" alt="hello_world" height="350px" width="700px">
+            <br><br>
+            <p>copy code from here:</p> 
+            <br>
+            <code>
+               print("Hello world, this is my first line code ever!")
+            </code>
+            <br>
+        </section>
+        <section class="main-section" id="Variables_📦">
+            <header>
+                <b>Variables 📦</b> 
+            </header>
+            <p>Variables in python<br>
+                Variables are basically like empty containers where you can store values.   <br>
+                Unlike many conventional languages it doesn't have command for declaring Variables. <br> </p>
+            <img src="https://i.postimg.cc/9QBJbRZV/Variables.png" alt="Variables" height="500px" width="700px">
+            <br><br>
+            <code>
+                  <br>  num1 = 234
+                  <br>   num2 = 2434.46
+                  <br>  name1 = 'John Snow'
+                  <br>
+                  <br> # Multiple Assignment
+                  <br>a= b=c=d=1
+                  <br> print(c)
+                  
+                  <br> a,b,c,d = 12,44,546, "Var 4"
+                  <br> print(d)
+            </code>
+            <br>
+        </section>
+        <section class="main-section" id="Data_types_💾">
+            <header>
+                <b>Data types 💾</b>    
+            </header>
+            
+            <p>Data types are the classification or categorization of data items. <br>
+            It represents the kind of value that tells what operations can be performed on a particular data.
+            </p>
+            <br>
+            <em> <b>Data types in python:</b> </em> 
+            <br>
+            <ol id="ordered-list">
+                <li>1. Numbers</li>
+                <li>2. Strings</li>
+                <li>3. List</li>
+                <li>4. Tuple</li>
+                <li>5. Dictionary</li>
+            </ol>
+            <br>
+             <em> <u>Tuple</u> </em>  is similar to the list. but for its declaration we use parenthesis() <br>
+             Tuples cannot be updated like listsbr  <br>
+             <em> <u>Dictionary</u> </em>  is Similar to hashtable. <br>
+             Dictionaries are enclosed by curly braces { } <br>
+             and values can be assigned and accessed using squae braces ([]) <br>
+             <br><b>Text Type:</b> 	str
+             <br><b>Numeric Types:</b>	int, float, complex
+             <br><b>Sequence Types:</b>	list, tuple, range
+             <br><b>Mapping Type:</b>	dict
+             <br><b>Set Types:</b>	set, frozenset
+             <br><b>Boolean Type:</b>	bool
+             <br> <b>Binary Types:</b> 	bytes, bytearray, memoryview
+             <br>
+             <img src="https://i.postimg.cc/pTYKdq4b/Datatypes.png" alt=""alt="Datatypes" height="580px" width="650px">
+             <br>
+            <br>
+             <code>
+                # 1. Numbers <br>
+                number1 = 3423 <br>
+                <br>
+                # 2. Strings <br>
+                str1 = "This is the Testing string"<br>
+                print(str1)   &emsp;   &emsp; &emsp;    # Prints complete string<br>
+                <br>
+                # 3. List<br>
+                list = ['noraml 1', 7834, " snow", 45641.54, 'john', 70.2 ]<br>
+                print(list)       &emsp;   &emsp; &emsp;     &emsp;   # Prints complete list<br>
+                print(list[0])    &emsp;   &emsp; &emsp;        # Prints first element of the list<br>
+                <br>
+                # 4. Tuple<br>
+                tuple1 = (342,35.54564,"new1",211,"FIle34",'Rock',2352)<br>
+                print(tuple1)         &emsp;   &emsp; &emsp;   &emsp;   # Prints complete tuple<br>
+                print(tuple1[4])      &emsp;   &emsp; &emsp;      # Prints fifth element of thetuple <br>
+                <br>
+                # 5. Dictionary<br>
+                dict1 ={'student 1':123,'Lecture 34':411,'Food':'Category'}<br>
+                print(dict1)         &emsp;   &emsp; &emsp;    &emsp;&emsp;&emsp;&emsp;&emsp;   #Printing whole dictionary<br>
+                print(dict1['student 1'])  &emsp;   &emsp; &emsp; # Prints value for 'Student 1' key<br>
+             </code>
+             <br>
+        </section>
+        <section class="main-section" id="If_else_👍_/_👎">
+            <header>
+                <b>If else 👍 / 👎</b> 
+            </header>
+            <p>An else statement can be combined with an if statement.
+                <br>An else statement contains the block of code that executes if the conditional expression in 
+                the if statement <br> resolves  to 0 or a FALSE value. The else statement is an optional statement and there could be at most only 
+                <br>  one else statement following if.
+            </p>
+            <img src="https://i.postimg.cc/zXPK3LtB/IF-else.png" alt="if-else-statement" height="450px" width="550px">
+            <br>
+            <code>
+                n1 = 122
+               <br>  n2 = 223
+               <br>
+               <br>  if(n1 !=n2):
+               <br>   &emsp;&emsp;print ("n1 is not equal to n2")
+               <br>
+               <br> if n1>n2:
+               <br> &emsp;&emsp;print ("n1 is greater than n2") 
+                <br> elif n1==n2:    
+                <br> &emsp;&emsp; print ("n1 is equal to n2")
+                <br> else:    
+                <br> &emsp;&emsp; print ("n1 is lesser than n2")
+            </code>
+        </section>
+        <section class="main-section" id="Functions_🏂">
+            <header>
+                <b>Functions 🏂</b> 
+            </header>
+            <p>A function is a block of organized, reusable code that is used to perform a single, related action. <br>
+                Functions provide better modularity for your application and a high degree of code reusing.<br>
+                Functions help break our program into smaller and modular chunks. As our program grows larger and larger, 
+                <br> functions make it more organized and manageable.make it an ideal language for scripting and rapid application 
+                <br> development in many areas on most platforms.
+                Furthermore, it avoids repetition and makes the code reusable.
+            </p>
+
+            <img src="https://i.postimg.cc/bJT2PdSq/Functions.png" alt="Functions" height="450px" width="500px">
+            <br>
+            <code>
+                num1 = int(input("Enter number: "))
+                <br>def EvenOdd(num1):
+                <br>&emsp;&emsp;if num1%2==0:
+                <br>&emsp;&emsp;&emsp;&emsp;print("Entered number is Even ")
+                <br>&emsp;&emsp;else:
+                <br>&emsp;&emsp;&emsp;&emsp;print("Entered number is Odd ")
+                <br>EvenOdd(num1)
+            </code>
+        </section>
+        <br>
+        <section class="main-section" id="References_🔗">
+            <header>
+                <b>References 🔗</b> 
+            </header>
+            <p>This webpage is created during the freecodecamp's responsive web design certification. <br>
+                Most of the stuff is taken from <a href="https://www.tutorialspoint.com/python/python_functions.htm">Tutorials point </a> and <a href="https://www.programiz.com/python-programming/function">porgrammiz.</a> </p>
+                <p>You can connect me via below links</p>
+        </section>
+        <footer>
+            
+            <p> <b>Author: </b>Prathamesh Mali <br></p>
+          </footer>
+            <a href="https://github.com/Pratham82"><i class="fab fa-github" id="med"></i></a> 
+            <a href="https://www.linkedin.com/in/prathamesh-mali-20582318a/"><i class="fab fa-linkedin"></i></a> 
+            <a href="https://www.instagram.com/pratham82.exe/"><i class="fab fa-instagram"></i></a>    
+        </main>
+        
+</body>
+</html>

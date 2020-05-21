@@ -1,0 +1,161 @@
+/* css reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+/**************** navigation menu *********************/
+
+#navbar{
+    position: fixed;
+    height: 100%;
+    width:250;
+    border-right: solid 1px rgb(235, 232, 232);
+    padding-top: 10px;
+    background-image: linear-gradient(90deg,rgb(216, 216, 215), rgb(255, 254, 254));
+    color: rgb(12, 11, 3);
+    transition: 0.5s;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: -1;
+}
+#navbar h2{
+    font-size: 35px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    text-align: cent;
+}
+#main-doc a{
+    text-decoration: none;
+    color: lightblue;
+    
+}
+
+#main-doc .main-section #ordered-list{
+    list-style: none;
+}
+
+#navbar ul{
+    font-size: 22px;
+    padding:5px 15px;
+}
+
+#navbar li a{
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#navbar li :hover{
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    color: rgb(104, 89, 89);
+    transform: scale(1.04);
+    
+}
+
+
+/****************** Main document *************/
+
+#main-doc{
+   position: absolute;
+   margin-left: 250px;
+   padding: 20px;
+   margin-bottom:100px;
+   transition:.5s;
+   /* background-image: linear-gradient(90deg, rgb(221, 216, 216), rgb(236, 236, 236)); */
+}
+
+#main-doc header{
+    font-size: 27px;
+    padding-top: 15px;
+}
+
+#main-doc p{
+    padding-top: 18px;
+}
+
+#main-doc .openbtn,.closebtn{
+    background-color: white;
+    border: 1px rgb(216, 213, 213) ;
+}
+#main-doc .openbtn:hover{
+    transform: scale(1.06);
+}
+#main-doc .closebtn:hover{
+    transform: scale(1.06);
+}
+
+/************* image animation **************/
+#main-doc .main-section img{
+    padding-top: 10px;
+    box-shadow: 25px 26px 49px -27px rgba(0,0,0,0.75);
+    transition: 0.7s;
+}
+#main-doc .main-section img:hover{
+    box-shadow: 25px 26px 49px -64px rgba(0,0,0,0.75);
+    transform: scale(1.01);
+    transition: 0.7s;
+
+}
+code {
+    display: block;
+    line-height: 2;
+    background-color: #eee8e8;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.fab{
+    padding-top: 5px;
+    padding-left: 1px;
+    font-size: 35px;
+    transition: 0.7s;
+    color: black;
+}
+
+.fab:hover{
+    transform: rotate(45deg);
+}
+
+
+/**************** media queries ********************/
+@media(max-width: 930px){
+    #navbar{
+        width: 250px;
+    }
+    #navbar h2{
+        font-size: 25px;
+    }
+    #navbar a{
+        font-size: 20px;
+    }   
+    #main-doc{
+        
+        margin-left: 250px;
+    }
+    #main-doc header{
+        font-size: 20px;
+    }
+    #main-doc p{
+        font-size: 15px;
+    }
+    #main-doc img{
+        height: 250px;
+        width: 500px;
+        box-shadow: 25px 26px 49px -27px rgba(0,0,0,0.75);
+    }
+    
+}
